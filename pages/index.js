@@ -14,6 +14,14 @@ function HomeStyle(){
         .banner-text{
           margin: 0;
           max-width: 30rem;
+          transition: 0.25s;
+          animation-name: text-show;
+          animation-duration: 1.25s;
+        }
+
+        @keyframes text-show {
+          from {opacity: 0}
+          to {opacity: 1}
         }
 
         p{
@@ -27,17 +35,37 @@ function HomeStyle(){
           font-family: Playfair Display;
         }
 
+        @keyframes old-man {
+          from {margin-right: 30rem; opacity: 0}
+          to {margin-right: 0; opacity: 1}
+        }
+
         .old-man .old-man-img {
           width: 21rem;
           position: absolute;
-          margin: -5rem
+          margin: -5rem 0 0 -5rem;
+          animation-name: old-man;
+          animation-duration: 1.25s;
         }
 
         .old-man .bubbles {
           position: relative;
-          margin-right: 0rem;
+          margin-left: 15rem;
           margin-bottom: -5.5rem;
           width: 4rem;
+          animation-name: old-man-bubble;
+          animation-duration: 1.25s;
+        }
+
+        @keyframes old-man {
+          from {opacity: 0}
+          to {opacity: 1}
+        }
+
+        @keyframes old-man-bubble {
+          from {opacity: 0}
+          to {opacity: 1}
+        }
       `}
     </style>
   )
