@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
           
-        .home-aligner {
-          margin-top: 8.75rem;
-          margin-bottom: 2rem;
+        .homeAligner {
+          margin: 8.75rem 1rem 2rem 1rem;
         }
 
         .banner {
@@ -92,6 +91,33 @@
   
             h2 {
               font-size: 2rem;
+            }
+
+            div {
+              display: flex;
+              padding-left: 0;
+              margin-left: 0;
+
+              img {
+                max-width: 2rem;
+              }
+            }
+
+            button {
+              width: 6.25rem;
+              background-color: #E6A500;
+              margin-top: 1rem;
+              padding: .5rem 1rem;
+              color: #022640;
+              font-size: 1rem;
+              font-weight: 600;
+              font-family: Merriweather;  
+              border: 2px solid #E6A500;
+        
+              &:hover{
+                  color: #E6A500;
+                  background: rgba(0, 0, 0, 0)
+              }
             }
           }
         }
