@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
           
         .homeAligner {
-          margin: 8.75rem 1rem 2rem 1rem;
+          margin: 8.75rem 0rem 2rem 0rem;
         }
 
         .banner {
@@ -44,7 +44,7 @@
 
         .oldMan .bubbles {
           position: relative;
-          margin-left: 12rem;
+          margin-left: -17.5rem;
           margin-bottom: -5.8rem;
           width: 4rem;
           animation-name: old-man-bubble;
@@ -63,7 +63,6 @@
 
         .services {
           border-top: 1px solid #ccc;
-          min-width: 100%;
           box-shadow: 0px -4px 21px 0px rgba(0,0,0,0.25);
           height: 34rem;
         }
@@ -87,10 +86,15 @@
           }
   
           .detailsBox {
-            padding: 3rem 1rem;
+            padding: 3rem 7.5rem 3rem 3rem;
   
             h2 {
               font-size: 2rem;
+              margin-bottom: 1rem;
+            }
+
+            span {
+              font-size: 1.25rem;
             }
 
             div {
@@ -103,13 +107,17 @@
               }
             }
 
+            path {
+              fill: #E6A500;
+            }
+
             button {
-              width: 6.25rem;
+              width: 12rem;
               background-color: #E6A500;
-              margin-top: 1rem;
-              padding: .5rem 1rem;
+              margin-top: 3rem;
+              padding: .8rem 1rem;
               color: #022640;
-              font-size: 1rem;
+              font-size: 1.125rem;
               font-weight: 600;
               font-family: Merriweather;  
               border: 2px solid #E6A500;
