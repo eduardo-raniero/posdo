@@ -45,8 +45,35 @@ export default function Home() {
           </div>
         </article>
 
-        <article className="workers">
-          
+        <article className={styles.workers}>
+          <div className={styles.workersAligner}>
+            <h1>Nossos Almirantes</h1>
+
+            <div className={styles.workersContainer}>
+              <div style={{marginTop: '4rem'}} className={styles.workerBox}>
+                <img src="./workers/fernando.png" alt="aa" /> <br />
+                <strong>Antônio Carlos</strong>
+                <p>Almirante com 2 anos de Posdo, ama viajar pelo país e exterior.</p>
+              </div>
+              <div style={{marginTop: '2rem'}} className={styles.workerBox}>
+                <img src="./workers/rodrigo.png" alt="aa" /> <br />
+                <strong>Rodrigo Antunes</strong>
+                <p>Almirante com 5 anos de Posdo, entusiasta de Sherlock Holmes.</p>
+              </div>
+              <div  className={styles.workerBox}>
+                <img src="./workers/antonio.png" alt="aa" /> <br />
+                <strong>Antônio Carlos</strong>
+                <p>Almirante com 7 anos de Posdo, amante de motos “custom”.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article className={styles.cta}>
+          <div className={styles.ctaAligner}>
+            <h1>What is Lorem Ipsum?</h1>
+            <button>Agendar</button>
+          </div>
         </article>
       </div>
     </>
