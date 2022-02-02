@@ -1,0 +1,52 @@
+.bigAligner {
+    margin: 6.75rem 0rem 0rem 0rem;
+}
+
+.banner {
+    text-align: center;
+    height: 21rem;
+    max-width: 1200px;
+    margin-bottom: 12rem;
+
+    .formBox{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+
+        input, textarea{
+            width: 25rem;
+            max-width: 25rem;
+            max-height: 5rem;
+            padding: .8rem;
+            margin-top: 1rem;
+            background: #011728;
+            outline: none;
+            border-radius: .2rem;
+            border: 2px solid #011728;
+            color: #ccc;
+            
+            &::placeholder{
+                color: rgb(148, 148, 148);
+            }
+        }
+
+        button {
+            width: 26.8rem;
+            background-color: #E6A500;
+            margin-top: 1.6rem;
+            padding: .8rem 1rem;
+            color: #022640;
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: Merriweather;  
+            border: 2px solid #E6A500;
+      
+            &:hover{
+                color: #E6A500;
+                background: rgba(0, 0, 0, 0)
+            }
+          }
+    }
+}
+

@@ -5,6 +5,10 @@
   color: #022640;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
     color: #ccc;
     margin: 0 auto;

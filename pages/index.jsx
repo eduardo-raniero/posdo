@@ -8,8 +8,7 @@ import { BsClockFill } from 'react-icons/bs';
 import { AiFillDollarCircle } from 'react-icons/ai';
 
 export default function Home() {
-  
-  console.log(useRouter);
+  const router = useRouter()
   return (
     <>
       <div className={styles.homeAligner}>
@@ -76,7 +75,7 @@ export default function Home() {
         <article className={styles.cta}>
           <div className={styles.ctaAligner}>
             <h1>What is Lorem Ipsum?</h1>
-            <button>Agendar</button>
+            <button onClick={() => router.push('/agendar')}>Agendar</button>
           </div>
         </article>
       </div>
