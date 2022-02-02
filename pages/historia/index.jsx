@@ -1,0 +1,35 @@
+
+//CSS
+import styles from '../../styles/history.module.scss'
+
+function History(){
+    return(
+        <article className={styles.bigAligner}>
+            <div className={styles.banner}>
+                <h1>Quem é a Posdo?</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div className={styles.text}>
+                <div style={{marginLeft: '1rem', marginRight: '1rem'}} className={styles.textAligner}>
+                    <img style={{width: '2rem', height: '2rem', marginBottom: '2.5rem'}} src="./logo/anchor.png" alt="âncora posdo" />
+                    <div className={styles.textGrid}>
+                        <div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+                            1500s, when an unknown printer took a <strong>galley of type</strong> and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+                            1500s, when an <strong>unknown printer</strong> took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        </div>
+                        <img src="./services/haircut.jpg" alt="" />
+                        
+                    </div>
+                </div>
+            </div>
+        </article>
+    )
+}
+
+export default History;

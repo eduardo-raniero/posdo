@@ -14,6 +14,11 @@
     background-color: #022640;
   }
 
+  h1 {
+    font-size: 4rem;
+    font-family: Playfair Display;
+  }
+
   p, span {
     font-family: 'Merriweather';
     line-height: 2rem;

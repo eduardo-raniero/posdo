@@ -1,6 +1,8 @@
+import { useRouter } from 'next/router';
 import styles from './menu.module.scss';
 
 export default function Menu(){
+    const router = useRouter();
     return(
         <>
             <div className={styles.menu}>  
@@ -10,10 +12,9 @@ export default function Menu(){
                     </div>
                     
                     <div style={{marginRight: '1rem'}}>
-                        <button>Sobre</button>
-                        <button>História</button>
-                        <button>Contato</button>
-                        <button>Agendar</button>
+                        <button onClick={() => router.push('/historia')}>História</button>
+                        <button onClick={() => router.push('/contato')}>Contato</button>
+                        <button onClick={() => router.push('/agendar')}>Agendar</button>
                     </div>
                 </div>
             </div>

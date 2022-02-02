@@ -1,3 +1,5 @@
+import { useRouter } from 'next/router';
+
 //CSS
 import styles from '../styles/home.module.scss';
 
@@ -6,6 +8,8 @@ import { BsClockFill } from 'react-icons/bs';
 import { AiFillDollarCircle } from 'react-icons/ai';
 
 export default function Home() {
+  
+  console.log(useRouter);
   return (
     <>
       <div className={styles.homeAligner}>

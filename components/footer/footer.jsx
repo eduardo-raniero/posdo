@@ -1,21 +1,21 @@
+import { useRouter } from 'next/router';
 import styles from './footer.module.scss';
 
 export default function Footer(){
     const year = new Date().getFullYear();
-
+    const router = useRouter()
     return(
         <>
             <div className={styles.footer}>
                 <div className={styles.footerAligner}>
-                    <div style={{marginLeft: '0', maxWidth: '25rem'}}>
+                    <div style={{marginLeft: '1rem', maxWidth: '25rem'}}>
                         <span>Todos os direitos reservados Posdo {`${year}`} 31.178.616/0001-80</span>
                     </div>
                     
-                    <div style={{marginRight: '0'}}>
-                        <button>Sobre</button>
-                        <button>História</button>
-                        <button>Contato</button>
-                        <button>Agendar</button>
+                    <div style={{marginRight: '1rem'}}>
+                        <button style={{marginBottom: '1rem'}} onClick={() => router.push('/historia')}>História</button>
+                        <button onClick={() => router.push('/contato')}>Contato</button>
+                        <button onClick={() => router.push('/agendar')}>Agendar</button>
                     </div>
                 </div>
             </div>
