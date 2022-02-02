@@ -1,0 +1,34 @@
+.menu{
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.menuAligner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.menuAligner  {
+    .Logo {
+        width: 9.25rem;   
+      }
+
+    button {
+      width: 6.25rem;
+      background-color: #E6A500;
+      margin-left: 1.3rem;
+      padding: .5rem 1rem;
+      color: #022640;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: Merriweather;  
+      border: 2px solid #E6A500;
+
+      &:hover{
+          color: #E6A500;
+          background: rgba(0, 0, 0, 0)
+      }
+    }
+}
+  

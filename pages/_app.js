@@ -1,33 +1,12 @@
-import Menu from '../components/menu';
+//COMPONENTS
+import Menu from '../components/menu/menu';
 
-function GlobalStyle(){
-  return(
-    <style>
-      {`
-        * {
-          color: #ccc;
-          margin: 0 auto;
-        }
-
-        body {
-          background-color: #022640;
-        }
-
-        button {
-          outline: none;
-          border: none;
-          cursor: pointer;
-          transition: 0.25s;
-        }
-      `}
-    </style>
-  )
-}
+//CSS
+import '../styles/global.css';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <GlobalStyle />
       <Menu />
       <Component {...pageProps} />
     </>
