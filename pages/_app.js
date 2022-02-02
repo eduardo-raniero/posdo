@@ -1,5 +1,6 @@
 //COMPONENTS
 import Menu from '../components/menu/menu';
+import Footer from '../components/footer/footer';
 
 //CSS
 import '../styles/global.css';
@@ -9,6 +10,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Menu />
       <Component {...pageProps} />
+      <Footer />
     </>
     )
 }

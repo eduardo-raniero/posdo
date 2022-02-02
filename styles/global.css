@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@700&display=swap');
+
 ::selection{
   background: #ccc;
   color: #022640;
@@ -10,6 +12,11 @@
 
   body {
     background-color: #022640;
+  }
+
+  p, span {
+    font-family: 'Merriweather';
+    line-height: 2rem;
   }
 
   button {

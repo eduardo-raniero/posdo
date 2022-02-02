@@ -24,19 +24,19 @@ export default function Home() {
           <div className={styles.servicesAligner}>
             <div className={styles.servicesBox}>
               <div className={styles.servicesBigImg}>
-                <img src="./services/beard-haircut.jpg" alt="Serviços Posdo Corte" />
+                <img loading='lazy' src="./services/beard-haircut.jpg" alt="Serviços Posdo Corte" />
               </div>
               <div className={styles.detailsBox}>
                 <h2>Cabelo & Barba</h2>
                 <span>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</span>
                 <div style={{marginTop: '2rem'}}>
                   <div style={{marginLeft: '0rem', display: 'flex', flexDirection: 'column'}}>
-                    <h3 style={{content: '' , fontSize: '2rem',marginBottom: '.8rem'}}> <BsClockFill /> </h3>
-                    <p>XX min.</p>
+                    <h3 style={{content: '' , fontSize: '2rem',marginBottom: '.2rem'}}> <BsClockFill /> </h3>
+                    <p>60 min.</p>
                   </div>
                   <div style={{marginLeft: '0rem', display: 'flex', flexDirection: 'column'}}>
-                    <h3 style={{content: '' , fontSize: '2.287rem', marginBottom: '.5rem'}}> <AiFillDollarCircle /> </h3>
-                    <p>R$XX.</p>
+                    <h3 style={{content: '' , fontSize: '2.287rem', marginBottom: '-.1rem'}}> <AiFillDollarCircle /> </h3>
+                    <p>R$75</p>
                   </div>
                 </div>
                 <button>Agendar</button>
