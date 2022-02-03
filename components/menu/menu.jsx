@@ -8,7 +8,9 @@ export default function Menu(){
             <div className={styles.menu}>  
                 <div className={styles.menuAligner}>
                     <div style={{marginLeft: '1rem'}}>
+                       <a href="/"> 
                         <img className={styles.Logo} src="./logo/TradicionalCinza.svg" alt="Posdo WebApp" />
+                       </a>
                     </div>
                     
                     <div style={{marginRight: '1rem'}}>

@@ -24,10 +24,17 @@
             outline: none;
             border-radius: .2rem;
             border: 2px solid #011728;
+            transition: .15s;
             color: #ccc;
+            font-family: 'Merriweather';
             
             &::placeholder{
                 color: rgb(148, 148, 148);
+            }
+
+            &:focus{
+                background: #011728;
+                border: 2px solid #024375;
             }
         }
 
@@ -46,7 +53,22 @@
                 color: #E6A500;
                 background: rgba(0, 0, 0, 0)
             }
-          }
+
+            &:disabled{
+                background: #ccc;
+                opacity: .5;
+                cursor: not-allowed;
+                border: 2px solid rgba(0,0,0,0);
+                color: #1e1e1e;
+            }
+        }
+
+        small {
+            margin-top: .3rem;
+            font-size: .8rem;
+            font-family: 'Merriweather';
+            color: #ff5555;
+        }
     }
 }
 
