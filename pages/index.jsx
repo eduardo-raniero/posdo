@@ -1,4 +1,8 @@
+import {useState, useEffect} from 'react';
 import { useRouter } from 'next/router';
+
+//UTILS
+import services from '../utils/listOfServices.json';
 
 //CSS
 import styles from '../styles/home.module.scss';
@@ -6,9 +10,12 @@ import styles from '../styles/home.module.scss';
 //ICONS
 import { BsClockFill } from 'react-icons/bs';
 import { AiFillDollarCircle } from 'react-icons/ai';
+//import { HiOutlineArrowSmRight, HiOutlineArrowSmLeft } from 'react-icons/hi'
 
 export default function Home() {
-  const router = useRouter()
+  const [currentService, setCurrentService] = useState(0)
+  const router = useRouter();
+
   return (
     <>
       <div className={styles.homeAligner}>
@@ -27,19 +34,20 @@ export default function Home() {
           <div className={styles.servicesAligner}>
             <div className={styles.servicesBox}>
               <div className={styles.servicesBigImg}>
-                <img loading='lazy' src="./services/beard-haircut.jpg" alt="Serviços Posdo Corte" />
+                <img loading='lazy' src={services[currentService]?.img} alt="Serviços Posdo Corte" />
               </div>
+              
               <div className={styles.detailsBox}>
-                <h2>Cabelo & Barba</h2>
-                <span>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</span>
+                <h2>{services[currentService]?.name}</h2>
+                <span>{services[currentService]?.desc}</span>
                 <div style={{marginTop: '2rem'}}>
                   <div style={{marginLeft: '0rem', display: 'flex', flexDirection: 'column'}}>
                     <h3 style={{content: '' , fontSize: '2rem',marginBottom: '.2rem'}}> <BsClockFill /> </h3>
-                    <p>60 min.</p>
+                    <p>{services[currentService]?.time}</p>
                   </div>
                   <div style={{marginLeft: '0rem', display: 'flex', flexDirection: 'column'}}>
                     <h3 style={{content: '' , fontSize: '2.287rem', marginBottom: '-.1rem'}}> <AiFillDollarCircle /> </h3>
-                    <p>R$75</p>
+                    <p>{services[currentService]?.price}</p>
                   </div>
                 </div>
                 <button>Agendar</button>

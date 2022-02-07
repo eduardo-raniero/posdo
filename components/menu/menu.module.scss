@@ -11,7 +11,8 @@
 
 .menuAligner  {
     .Logo {
-        width: 9.25rem;   
+        width: 9.25rem; 
+        cursor: pointer;  
       }
 
     button {
@@ -28,6 +29,10 @@
       &:hover{
           color: #E6A500;
           background: rgba(0, 0, 0, 0)
+      }
+
+      &:active{
+        filter: brightness(.5);
       }
     }
 }

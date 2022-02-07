@@ -21,5 +21,9 @@
         &:hover {
             color: #E6A500;
         }
+        
+        &:active{
+            filter: brightness(.5);
+          }
     }
 }

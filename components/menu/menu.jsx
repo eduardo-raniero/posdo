@@ -8,7 +8,7 @@ export default function Menu(){
             <div className={styles.menu}>  
                 <div className={styles.menuAligner}>
                     <div style={{marginLeft: '1rem'}}>
-                       <a href="/"> 
+                       <a onClick={() => router.push('/')}> 
                         <img className={styles.Logo} src="./logo/TradicionalCinza.svg" alt="Posdo WebApp" />
                        </a>
                     </div>
