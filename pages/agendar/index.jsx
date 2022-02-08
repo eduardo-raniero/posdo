@@ -1,7 +1,3 @@
-//import router from 'next/router';
-
-import firebase from '../../utils/Firebase/firebaseAuth';
-
 //CSS
 import styles from '../../styles/book.module.scss';
 
@@ -10,15 +6,7 @@ import { FaGoogle } from 'react-icons/fa';
 
 function Book(){
     const handleGoogleAuth = () => {
-        // const google_provider = new firebase.auth.GoogleAuthProvider();
-        // firebase.auth().signInWithPopup(google_provider)
-        //     .then((res) => {
-        //         console.log(res);
-        //     })
-        //     .catch((err)=>{
-        //         console.log(err);
-        //     })
-        // console.log(firebase);
+        console.log("building...");
     }
 
     return(
