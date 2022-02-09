@@ -22,8 +22,13 @@ html {
 
   h1 {
     font-size: 4rem;
-    font-family: Playfair Display;
+    font-family: 'Playfair Display';
   }
+
+  h2 {
+    font-family: 'Playfair Display';
+  }
+
 
   p, span {
     font-family: 'Merriweather';

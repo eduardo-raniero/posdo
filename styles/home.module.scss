@@ -463,10 +463,14 @@
     display: none;
   }
 
+  .services{
+    height: 52rem;
+  }
+
   .servicesBox {
     display: flex !important;
     flex-direction: column !important;
-    height: 35rem !important; 
+    height: 100% !important; 
     border-radius: .1rem;
     background: #011728 !important;
 
@@ -476,11 +480,11 @@
       margin-top: -.5rem;
 
       div:nth-child(1) {
-        width: 10rem;
+        width: 100%;
       }
 
       div:nth-child(2) {
-        width: 10rem;
+        width: 100%;
       }
 
       button {
@@ -517,6 +521,18 @@
 
     h1 {
       font-size: 3rem !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 340px){
+  .workers{
+    height: 72rem;
+  }
+  
+  .workersAligner {
+    .workerBox{
+      height: 15rem;
     }
   }
 }
