@@ -32,7 +32,7 @@ export default function Home() {
 
         <article className={styles.services}>
           <div className={styles.servicesAligner}>
-            <div className={styles.servicesBox}>
+            <div style={{marginLeft: '1rem', marginRight: '1rem'}} className={styles.servicesBox}>
               <div className={styles.servicesBigImg}>
                 <img loading='lazy' src={services[currentService]?.img} alt="Serviços Posdo Corte" />
               </div>
@@ -60,7 +60,7 @@ export default function Home() {
           <div className={styles.workersAligner}>
             <h1>Nossos Almirantes</h1>
 
-            <div className={styles.workersContainer}>
+            <div style={{marginLeft: '1rem', marginRight: '1rem'}} className={styles.workersContainer}>
               <div className={styles.workerBox}>
                 <img src="./workers/fernando.png" alt="aa" /> <br />
                 <strong>Antônio Carlos</strong>

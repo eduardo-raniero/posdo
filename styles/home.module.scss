@@ -37,7 +37,7 @@
 
 .oldMan .bubbles {
   position: relative;
-  margin-left: -17.5rem;
+  margin-left: -25.5rem;
   margin-bottom: -5.8rem;
   width: 4rem;
   animation-name: old-man-bubble;
@@ -96,6 +96,7 @@
       display: flex;
       padding-left: 0;
       margin-left: 0;
+      margin-top: 1rem;
 
       img {
         max-width: 2rem;
@@ -113,7 +114,7 @@
     button {
       width: 12rem;
       background-color: #E6A500;
-      margin-top: 3rem;
+      margin-top: 1.6rem;
       padding: .8rem 1rem;
       color: #022640;
       font-size: 1.125rem;
@@ -177,7 +178,7 @@
     p {
       opacity: .55;
       line-height: 1.5rem;
-      padding-top: .5rem;
+      padding: .5rem 0 0 0;
     }
   }
 }
@@ -211,6 +212,73 @@
     }
 }
 
+@media only screen and (max-width: 940px){
+  .banner {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem 0 1rem;
+  }
+  
+  .bannerText{
+    margin: 0 auto;
+    transition: 0.25s;
+    animation-name: text-show;
+    animation-duration: 1.25s;
+
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    p{
+      font-size: 1.25rem;
+    }
+  }
+  
+  .oldMan .oldManImg {
+    width: 13rem;
+    position: absolute;
+    margin: 1.35rem 0 0 -3.8rem;
+    animation-name: old-man;
+    animation-duration: 1.25s;
+  }
+  
+  .oldMan .bubbles {
+    position: relative;
+    margin-left: 23rem;
+    margin-bottom: -6.5rem;
+    width: 4rem;
+    animation-name: old-man-bubble;
+    animation-duration: 1.25s;
+  }
+
+  .workers {
+    height: 62rem;
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .workersContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 1rem 1rem 1rem;
+  
+    .workerBox{
+      height: 10rem;
+      border-radius: .2rem;
+      background: #011728;
+      padding: 2rem 5rem 2rem 5rem;
+      box-shadow: 0px 2px 13px 0px rgba(30,30,30,0.34);
+      margin-bottom: 0rem;
+      margin-top: 0rem;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px){
   .banner {
     display: block;
@@ -218,6 +286,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 1rem 0 1rem;
+
   }
   
   .bannerText{
@@ -238,7 +307,7 @@
   .oldMan .oldManImg {
     width: 13rem;
     position: absolute;
-    margin: 0.75rem 0 0 -3.8rem;
+    margin: 2.1rem 0 0 -3.8rem;
     animation-name: old-man;
     animation-duration: 1.25s;
   }
@@ -246,14 +315,14 @@
   .oldMan .bubbles {
     position: relative;
     margin-left: 15.5rem;
-    margin-bottom: -6.5rem;
+    margin-bottom: -8rem;
     width: 4rem;
     animation-name: old-man-bubble;
     animation-duration: 1.25s;
   }
 
   .services{
-    height: 50rem;
+    height: 34rem;
   }
 
   .servicesBox {
@@ -321,10 +390,28 @@
     }
   }
 
+  .services{
+    height: 35rem;
+  }
+
+  .workers{
+    height: 60rem;
+    text-align: center;
+    margin-bottom: 6.25rem;
+
+  }
+
+  .workersAligner{
+    h1 {
+      margin-bottom: 0rem !important;
+    }
+  }
+
   .workersContainer{
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 1rem 1rem 1rem;
+  
   
     .workerBox{
       height: 10rem;
@@ -333,7 +420,7 @@
       padding: 2rem 5rem 2rem 5rem;
       box-shadow: 0px 2px 13px 0px rgba(30,30,30,0.34);
       margin-bottom: 0rem;
-      margin-top: 0;
+      margin-top: 0rem;
   
       img {
         margin-bottom: .5rem;
@@ -352,9 +439,22 @@
       }
     }
   }
+
+  .cta {
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    h1 {
+      font-size: 3rem !important;
+    }
+  }
 }
 
 @media only screen and (max-width: 600px){
+  .banner {
+    height: 25rem;
+  }
+  
   .oldMan .oldManImg {
     display: none;
   }
@@ -375,6 +475,14 @@
       background: #011728;
       margin-top: -.5rem;
 
+      div:nth-child(1) {
+        width: 10rem;
+      }
+
+      div:nth-child(2) {
+        width: 10rem;
+      }
+
       button {
         width: 100%;
       }
@@ -383,6 +491,10 @@
 
   .servicesBigImg img {
     height: 26rem !important;
+  }
+
+  .workers{
+    height: 67rem;
   }
 
   .workersAligner {
@@ -396,6 +508,15 @@
     h1{
       margin-bottom: 3.7rem;
       font-size: 3rem;
+    }
+  }
+
+  .cta {
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    h1 {
+      font-size: 3rem !important;
     }
   }
 }
