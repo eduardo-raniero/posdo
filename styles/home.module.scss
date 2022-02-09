@@ -1,207 +1,401 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
-          
-        .homeAligner {
-          margin: 8.75rem 0rem 2rem 0rem;
-        }
+.homeAligner {
+  margin: 8.75rem 0rem 2rem 0rem;
+}
 
-        .banner {
-          display: flex;
-          height: 31.25rem;
-          max-width: 1200px;
-        }
+.banner {
+  display: flex;
+  height: 31.25rem;
+  max-width: 1200px;
+}
 
-        .bannerText{
-          margin: 0;
-          max-width: 30rem;
-          transition: 0.25s;
-          animation-name: text-show;
-          animation-duration: 1.25s;
+.bannerText{
+  margin-left: 1rem;
+  max-width: 30rem;
+  transition: 0.25s;
+  animation-name: text-show;
+  animation-duration: 1.25s;
 
-          @keyframes text-show {
-            from {opacity: 0}
-            to {opacity: 1}
-          }
+  @keyframes text-show {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+
+  p{
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    line-height: 2.25rem;
+  }
+}
+
+.oldMan .oldManImg {
+  width: 22rem;
+  position: absolute;
+  margin: -5.1rem 0 0 -5.5rem;
+  animation-name: old-man;
+  animation-duration: 1.25s;
+}
+
+.oldMan .bubbles {
+  position: relative;
+  margin-left: -17.5rem;
+  margin-bottom: -5.8rem;
+  width: 4rem;
+  animation-name: old-man-bubble;
+  animation-duration: 1.25s;
+}
+
+@keyframes old-man {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes old-man-bubble {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.services {
+  border-top: 1px solid #ccc;
+  box-shadow: 0px -30px 34px 0px rgba(0,0,0,0.03);
+  height: 34rem;
+}
+
+.servicesAligner {
+  max-width: 1200px;
+  margin-top: 3.125rem;
+}
+
+.servicesBox {
+  display: grid;
+  grid-template-columns: 61.8% 38.2%;
+  margin-bottom: 5.56rem;
+  height: 31.25rem;
+  border-radius: .1rem;
+  background: #011728;
+
+  .servicesBigImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 31.25rem;
+    border-radius: .1rem 0 0 .1rem;
+  }
+
+  .detailsBox {
+    padding: 3rem 7.5rem 3rem 3rem;
+
+    h2 {
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+    }
+
+    span {
+      font-size: 1.125rem;
+    }
+
+    div {
+      display: flex;
+      padding-left: 0;
+      margin-left: 0;
+
+      img {
+        max-width: 2rem;
+      }
+    }
+
+    path {
+      fill: #E6A500;
+    }
+
+    p{
+      font-size: 1.125rem;
+    }
+
+    button {
+      width: 12rem;
+      background-color: #E6A500;
+      margin-top: 3rem;
+      padding: .8rem 1rem;
+      color: #022640;
+      font-size: 1.125rem;
+      font-weight: 600;
+      font-family: Merriweather;  
+      border: 2px solid #E6A500;
+
+      &:hover{
+          color: #E6A500;
+          background: rgba(0, 0, 0, 0)
+      }
+    }
+  }
+}
+
+.workers{
+  height: 30rem;
+  text-align: center;
+  margin-bottom: 6.25rem;
+}
+
+.workersAligner {
+  max-width: 1200px;
+  margin-top: 6.125rem;
+
+  h1{
+    margin-bottom: 4.7rem;
+  }
+}
+
+.workersContainer{
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.75rem;
+
+  div:nth-child(1){
+    margin-top: 4rem;
+  }
+
+  div:nth-child(2){
+    margin-top: 2rem;
+  }
+
+  .workerBox{
+    height: 10rem;
+    border-radius: .2rem;
+    background: #011728;
+    padding: 1.5rem 3rem 2.5rem 3rem;
+    box-shadow: 0px 2px 13px 0px rgba(30,30,30,0.34);
+    margin-bottom: 3rem;
+
+    img {
+      margin-bottom: .5rem;
+    }
+    
+    strong {
+      font-size: 1rem;
+      font-family: 'Merriweather';
+    }
+
+    p {
+      opacity: .55;
+      line-height: 1.5rem;
+      padding-top: .5rem;
+    }
+  }
+}
+
+.cta {
+  height: 18.3rem;
+  text-align: center;
+  margin-bottom: 6.25rem;
+  margin-top: 6rem;
+}
+
+.ctaAligner{
+    max-width: 1200px;
+    margin-top: 9.125rem;
+
+    button {
+      width: 12rem;
+      background-color: #E6A500;
+      margin-top: 3rem;
+      padding: .8rem 1rem;
+      color: #022640;
+      font-size: 1.125rem;
+      font-weight: 600;
+      font-family: Merriweather;  
+      border: 2px solid #E6A500;
+
+      &:hover{
+          color: #E6A500;
+          background: rgba(0, 0, 0, 0)
+      }
+    }
+}
+
+@media only screen and (max-width: 768px){
+  .banner {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem 0 1rem;
+  }
   
-          p{
-            font-size: 1.5rem;
-            margin-top: .5rem;
-            line-height: 2.25rem;
-          }
-        }
+  .bannerText{
+    margin: 0 auto;
+    transition: 0.25s;
+    animation-name: text-show;
+    animation-duration: 1.25s;
 
-        .oldMan .oldManImg {
-          width: 22rem;
-          position: absolute;
-          margin: -5.1rem 0 0 -5.5rem;
-          animation-name: old-man;
-          animation-duration: 1.25s;
-        }
+    h1 {
+      font-size: 3rem;
+    }
 
-        .oldMan .bubbles {
-          position: relative;
-          margin-left: -17.5rem;
-          margin-bottom: -5.8rem;
-          width: 4rem;
-          animation-name: old-man-bubble;
-          animation-duration: 1.25s;
-        }
-
-        @keyframes old-man {
-          from {opacity: 0}
-          to {opacity: 1}
-        }
-
-        @keyframes old-man-bubble {
-          from {opacity: 0}
-          to {opacity: 1}
-        }
-
-        .services {
-          border-top: 1px solid #ccc;
-          box-shadow: 0px -30px 34px 0px rgba(0,0,0,0.03);
-          height: 34rem;
-        }
-
-        .servicesAligner {
-          max-width: 1200px;
-          margin-top: 3.125rem;
-        }
-
-        .servicesBox {
-          display: grid;
-          grid-template-columns: 61.8% 38.2%;
-          margin-bottom: 5.56rem;
-          height: 31.25rem;
-          border-radius: .1rem;
-          background: #011728;
-
-          .servicesBigImg img {
-            object-fit: cover;
-            width: 100%;
-            height: 31.25rem;
-            border-radius: .1rem 0 0 .1rem;
-          }
+    p{
+      font-size: 1.25rem;
+    }
+  }
   
-          .detailsBox {
-            padding: 3rem 7.5rem 3rem 3rem;
+  .oldMan .oldManImg {
+    width: 13rem;
+    position: absolute;
+    margin: 0.75rem 0 0 -3.8rem;
+    animation-name: old-man;
+    animation-duration: 1.25s;
+  }
   
-            h2 {
-              font-size: 2.25rem;
-              margin-bottom: 1rem;
-            }
+  .oldMan .bubbles {
+    position: relative;
+    margin-left: 15.5rem;
+    margin-bottom: -6.5rem;
+    width: 4rem;
+    animation-name: old-man-bubble;
+    animation-duration: 1.25s;
+  }
 
-            span {
-              font-size: 1.125rem;
-            }
+  .services{
+    height: 50rem;
+  }
 
-            div {
-              display: flex;
-              padding-left: 0;
-              margin-left: 0;
-
-              img {
-                max-width: 2rem;
-              }
-            }
-
-            path {
-              fill: #E6A500;
-            }
-
-            p{
-              font-size: 1.125rem;
-            }
-
-            button {
-              width: 12rem;
-              background-color: #E6A500;
-              margin-top: 3rem;
-              padding: .8rem 1rem;
-              color: #022640;
-              font-size: 1.125rem;
-              font-weight: 600;
-              font-family: Merriweather;  
-              border: 2px solid #E6A500;
-        
-              &:hover{
-                  color: #E6A500;
-                  background: rgba(0, 0, 0, 0)
-              }
-            }
-          }
+  .servicesBox {
+    display: grid;
+    grid-template-columns: 61.8% 38.2%;
+    margin: 0 1rem 5.56rem 1rem;
+    height: 31rem;
+    border-radius: .1rem;
+    background: #011728;
+  
+    .servicesBigImg img {
+      object-fit: cover;
+      width: 100%;
+      height: 31rem;
+      border-radius: .1rem 0 0 .1rem;
+    }
+  
+    .detailsBox {
+      padding: 2.5rem 2rem 2.5rem 2.5rem;
+  
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+  
+      span {
+        font-size: 1rem;
+      }
+  
+      div {
+        display: flex;
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: .8rem;
+  
+        img {
+          max-width: 1.8rem;
         }
-
-        .workers{
-          height: 27rem;
-          text-align: center;
-          margin-bottom: 6.25rem;
+      }
+  
+      path {
+        fill: #E6A500;
+      }
+  
+      p{
+        font-size: .85rem;
+      }
+  
+      button {
+        width: 8rem;
+        background-color: #E6A500;
+        margin-top: 1.6rem;
+        padding: .6rem .8rem;
+        color: #022640;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: 'Merriweather';  
+        border: 2px solid #E6A500;
+  
+        &:hover{
+            color: #E6A500;
+            background: rgba(0, 0, 0, 0)
         }
+      }
+    }
+  }
 
-        .workersAligner {
-          max-width: 1200px;
-          margin-top: 6.125rem;
+  .workersContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 1rem 1rem 1rem;
+  
+    .workerBox{
+      height: 10rem;
+      border-radius: .2rem;
+      background: #011728;
+      padding: 2rem 5rem 2rem 5rem;
+      box-shadow: 0px 2px 13px 0px rgba(30,30,30,0.34);
+      margin-bottom: 0rem;
+      margin-top: 0;
+  
+      img {
+        margin-bottom: .5rem;
+      }
+      
+      strong {
+        font-size: 1rem;
+        font-family: 'Merriweather';
+      }
+  
+      p {
+        opacity: .55;
+        line-height: 1.5rem;
+        padding-top: .5rem;
+        font-weight: 400 !important;
+      }
+    }
+  }
+}
 
-          h1{
-            margin-bottom: 4.7rem;
-          }
-        }
+@media only screen and (max-width: 600px){
+  .oldMan .oldManImg {
+    display: none;
+  }
+  
+  .oldMan .bubbles {
+    display: none;
+  }
 
-        .workersContainer{
-          display: inline-grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          gap: 3.75rem;
+  .servicesBox {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 35rem !important; 
+    border-radius: .1rem;
+    background: #011728 !important;
 
-          .workerBox{
-            height: 10rem;
-            border-radius: .2rem;
-            background: #011728;
-            padding: 1.5rem 3rem 2.5rem 3rem;
-            box-shadow: 0px 2px 13px 0px rgba(30,30,30,0.34);
-            margin-bottom: 3rem;
+    .detailsBox {
+      padding: 2.5rem 2rem 2.5rem 2.5rem;
+      background: #011728;
+      margin-top: -.5rem;
 
-            img {
-              margin-bottom: .5rem;
-            }
-            
-            strong {
-              font-size: 1rem;
-              font-family: 'Merriweather';
-            }
+      button {
+        width: 100%;
+      }
+    }
+  }
 
-            p {
-              opacity: .55;
-              line-height: 1.5rem;
-              padding-top: .5rem;
-            }
-          }
-        }
+  .servicesBigImg img {
+    height: 26rem !important;
+  }
 
-        .cta {
-          height: 18.3rem;
-          text-align: center;
-          margin-bottom: 6.25rem;
-          margin-top: 6rem;
-        }
+  .workersAligner {
+    max-width: 1200px;
+    margin-top: 6rem;
 
-        .ctaAligner{
-            max-width: 1200px;
-            margin-top: 9.125rem;
-
-            button {
-              width: 12rem;
-              background-color: #E6A500;
-              margin-top: 3rem;
-              padding: .8rem 1rem;
-              color: #022640;
-              font-size: 1.125rem;
-              font-weight: 600;
-              font-family: Merriweather;  
-              border: 2px solid #E6A500;
-        
-              &:hover{
-                  color: #E6A500;
-                  background: rgba(0, 0, 0, 0)
-              }
-            }
-        }
-
+    .workerBox{
+      height: 13rem;
+    }
+  
+    h1{
+      margin-bottom: 3.7rem;
+      font-size: 3rem;
+    }
+  }
+}

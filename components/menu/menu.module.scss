@@ -36,4 +36,46 @@
       }
     }
 }
+
+@media only screen and (max-width: 768px){
+  .menuAligner  {
+    .Logo {
+        width: 8.25rem; 
+        cursor: pointer;  
+      }
+
+      button {
+        width: 6rem;
+        background-color: #E6A500;
+        margin-left: .8rem;
+        padding: .7rem 1rem;
+        color: #022640;
+        font-size: .9rem;
+        font-weight: 600;
+        font-family: Merriweather;  
+        border: 2px solid #E6A500;
+      }
+    }
+}
+
+@media only screen and (max-width: 500px){
+  .menuAligner  {
+      .buttonsBox{
+        display: flex;
+        flex-direction: row;
+      }
+
+      button {
+        width: 4.5rem;
+        background-color: rgba(0, 0, 0, 0);
+        margin-left: .125rem;
+        padding: .7rem .8rem;
+        color: #E6A500;
+        font-size: .8rem;
+        font-weight: 600;
+        font-family: 'Merriweather';  
+        border: none;
+      }
+    }
+}
   

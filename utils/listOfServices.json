@@ -2,7 +2,7 @@
     {
         "id": "0",
         "name": "Corte de Cabelo",
-        "desc": "Lorem ipsum dolor sit ame some big text here so i can go to the next step on this mock description",
+        "desc": "Lorem ipsum dolor sit ame some big text here so i can go to the next step",
         "time": "60 min",
         "price": "R$50",
         "img": "./services/haircut.jpg"
@@ -10,7 +10,7 @@
     {
         "id": "1",
         "name": "Aparar a Barba",
-        "desc": "Lorem ipsum dolor sit ame some big text here so i can go to the next step on this mock description",
+        "desc": "Lorem ipsum dolor sit ame some big text here so i can go to the next step",
         "time": "30 min",
         "price": "R$40",
         "img": "./services/beard.jpg"
@@ -18,7 +18,7 @@
     {
         "id": "2",
         "name": "Cabelo &amp; Barba",
-        "desc": "Lorem ipsum dolor sit ame some big text here so i can go to the next step on this mock description",
+        "desc": "Lorem ipsum dolor sit ame some big text here so i can go to the next step",
         "time": "80 min",
         "price": "R$80",
         "img": "./services/beard-haircut.jpg"

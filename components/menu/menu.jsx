@@ -13,7 +13,7 @@ export default function Menu(){
                        </a>
                     </div>
                     
-                    <div style={{marginRight: '1rem'}}>
+                    <div className={styles.buttonsBox} style={{marginRight: '1rem'}}>
                         <button onClick={() => router.push('/historia')}>História</button>
                         <button onClick={() => router.push('/contato')}>Contato</button>
                         <button onClick={() => router.push('/agendar')}>Agendar</button>
