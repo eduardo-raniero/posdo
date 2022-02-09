@@ -13,9 +13,9 @@ export default function Footer(){
                     </div>
                     
                     <div style={{marginRight: '1rem'}}>
-                        <button style={{marginBottom: '1rem'}} onClick={() => router.push('/historia')}>História</button>
-                        <button onClick={() => router.push('/contato')}>Contato</button>
-                        <button onClick={() => router.push('/agendar')}>Agendar</button>
+                        <button style={{marginBottom: '.5rem'}} onClick={() => router.push('/historia')}>História</button>
+                        <button style={{marginBottom: '.5rem'}} onClick={() => router.push('/contato')}>Contato</button>
+                        <button style={{marginBottom: '.5rem'}} onClick={() => router.push('/agendar')}>Agendar</button>
                     </div>
                 </div>
             </div>

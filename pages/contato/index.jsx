@@ -12,13 +12,13 @@ function Contact(){
                 <h1>Entre em contato!</h1>
 
                 <form method='POST' className={styles.formBox} onSubmit={handleSubmit}>
-                    <input onChange={handleChange} onMouseEnter={handleChange} onBlur={handleChange} value={values.Nome} type="text" name="Nome" placeholder="Seu Nome" />
+                    <input onChange={handleChange} onMouseEnter={handleChange} value={values.Nome} type="text" name="Nome" placeholder="Seu Nome" />
                     {errors.Nome && <small> {errors.Nome} </small>}
 
-                    <input onChange={handleChange} onMouseEnter={handleChange} onBlur={handleChange} value={values.Email} type="text" name="Email" placeholder="E-mail" />
+                    <input onChange={handleChange} onMouseEnter={handleChange} value={values.Email} type="text" name="Email" placeholder="E-mail" />
                     {errors.Email && <small> {errors.Email} </small>}
                     
-                    <textarea onChange={handleChange} onMouseEnter={handleChange} onBlur={handleChange} value={values.Mensagem} style={{minHeight: '5rem', minWidth: '25rem'}} name="Mensagem" placeholder="A sua mensagem"></textarea>
+                    <textarea onChange={handleChange} onMouseEnter={handleChange} value={values.Mensagem} style={{minHeight: '5rem'}} name="Mensagem" placeholder="A sua mensagem"></textarea>
                     {errors.Mensagem && <small> {errors.Mensagem} </small>}
 
                     <button type='submit' onClick={handleChange} disabled={isDisabled}>Enviar</button>

@@ -4,21 +4,24 @@
 
 .banner {
     text-align: center;
-    height: 21rem;
+    height: 30rem;
     max-width: 1200px;
     margin-bottom: 12rem;
+    padding: 0 1rem;
 
     .formBox{
         display: flex;
         flex-direction: column;
-        margin-top: 1rem;
-        margin-bottom: 5rem;
+        margin: 0 auto;
+        max-width: 28rem;
+        padding-top: 1.6rem;
 
         input, textarea{
-            width: 25rem;
-            max-width: 25rem;
+            min-width: 100%;
+            width: 100%;
+            max-width: 100%;
             max-height: 5rem;
-            padding: .8rem;
+            padding: .8rem 0rem .8rem .8rem;
             margin-top: 1rem;
             background: #011728;
             outline: none;
@@ -39,9 +42,10 @@
         }
 
         button {
-            width: 26.8rem;
+            width: 103%;
             background-color: #E6A500;
             margin-top: 1.6rem;
+            margin-bottom: 5rem;
             padding: .8rem 1rem;
             color: #022640;
             font-size: 1rem;
@@ -68,6 +72,19 @@
             font-size: .8rem;
             font-family: 'Merriweather';
             color: #ff5555;
+        }
+    }
+}
+
+@media only screen and (max-width: 940px){
+    .banner {
+        text-align: center;
+        height: 30rem;
+        max-width: 1200px;
+        margin-bottom: 10rem;
+
+        h1{
+            font-size: 3rem;
         }
     }
 }

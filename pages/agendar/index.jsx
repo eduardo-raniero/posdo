@@ -12,7 +12,7 @@ function Book(){
     return(
         <div className={styles.bigAligner}>
             <div className={styles.banner}>
-                <article>
+                <article style={{padding: '0 1rem'}}>
                     <h1>Faça seu login</h1>
                     <button onClick={handleGoogleAuth}><FaGoogle />  Login com Google</button>
                 </article>
