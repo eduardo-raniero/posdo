@@ -1,3 +1,7 @@
+import { auth } from '../../utils/Firebase/firebaseAuth';
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { useRouter } from 'next/router';
+
 //CSS
 import styles from '../../styles/book.module.scss';
 
@@ -5,8 +9,26 @@ import styles from '../../styles/book.module.scss';
 import { FaGoogle } from 'react-icons/fa';
 
 function Book(){
+    const router = useRouter();
+
     const handleGoogleAuth = () => {
-        console.log("building...");
+        const provider = new GoogleAuthProvider();
+        signInWithPopup(auth, provider)
+        .then((res)=>{
+            console.log(res);
+            console.log(res.user);
+
+            const udata = res.user
+            localStorage.setItem('user', JSON.stringify({
+                name: udata.displayName,
+                email: udata.email,
+                uid: udata.uid
+            }))
+            router.push('/dashboard')
+        })
+        .catch(()=>{
+            router.push('/agendar')
+        })
     }
 
     return(

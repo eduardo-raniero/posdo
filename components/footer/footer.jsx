@@ -3,7 +3,8 @@ import styles from './footer.module.scss';
 
 export default function Footer(){
     const year = new Date().getFullYear();
-    const router = useRouter()
+    const router = useRouter();
+
     return(
         <>
             <div className={styles.footer}>
