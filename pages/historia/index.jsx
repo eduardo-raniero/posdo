@@ -1,6 +1,6 @@
 
 //CSS
-import styles from '../../styles/history.module.scss'
+import styles from '../../styles/history.module.scss';
 
 function History(){
     return(
