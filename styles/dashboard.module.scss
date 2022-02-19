@@ -1,0 +1,50 @@
+.bigAligner {
+    margin: 5rem auto;
+    max-width: 1200px;
+    text-align: center;
+
+    h1{
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        font-weight: 400;
+        max-width: 55vw;
+        font-family: 'Merriweather';
+        margin-top: 1rem;        
+        margin-bottom: 3rem;                                                                      
+    }
+
+    button{
+        padding: .8rem 1rem;
+        margin-top: .5rem;
+        border-radius: .1rem;
+        background-color: #E6A500;
+        color: #022640;
+        font-weight: bold;
+        border: 2px solid #E6A500;
+
+        &:hover{
+            color: #E6A500;
+            background: rgba(0, 0, 0, 0)
+        }
+
+        &:disabled{
+            cursor: not-allowed;
+            opacity: .5;
+            background-color: #ccc;
+            color: #7e7e7e;
+            border-color: #ccc;
+        }
+    }
+
+    .barberItem{
+        width: 35vw;
+        background-color: #011728;
+        margin-bottom: 1.6rem;
+        padding: 2rem;
+        border-radius: .2rem;
+        font-size: 1.125rem;
+    }
+}

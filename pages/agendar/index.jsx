@@ -15,8 +15,6 @@ function Book(){
         const provider = new GoogleAuthProvider();
         signInWithPopup(auth, provider)
         .then((res)=>{
-            console.log(res);
-            console.log(res.user);
 
             const udata = res.user
             localStorage.setItem('user', JSON.stringify({
@@ -24,7 +22,10 @@ function Book(){
                 email: udata.email,
                 uid: udata.uid
             }))
-            router.push('/dashboard')
+            
+            if (udata.uid){
+                router.push('/carregando')
+            }
         })
         .catch(()=>{
             router.push('/agendar')

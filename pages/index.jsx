@@ -63,7 +63,7 @@ export default function Home() {
             <div style={{marginLeft: '1rem', marginRight: '1rem'}} className={styles.workersContainer}>
               <div className={styles.workerBox}>
                 <img src="./workers/fernando.png" alt="aa" /> <br />
-                <strong>Antônio Carlos</strong>
+                <strong>Fernando Martins</strong>
                 <p>Almirante com 2 anos de Posdo, ama viajar pelo país e exterior.</p>
               </div>
               <div className={styles.workerBox}>
