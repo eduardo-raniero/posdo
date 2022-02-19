@@ -53,7 +53,7 @@ export default function Dashboard(){
             <div className={styles.barbersBox}>
                 {
                     agenda.map((item) => (
-                    <div className={styles.barberItem}>
+                    <div key={item.id} className={styles.barberItem}>
                         <img src={`./workers/${item.img}.png`} alt={`${item.img}`} />
                         <p> <strong> {item.unoccupied.length} </strong> {item.unoccupied.length === 1 ? "Horário disponível" : 'Horários disponíveis'} </p>
                         <button disabled={item.unoccupied.length === 0 ? true : false}>Escolher Horário</button>

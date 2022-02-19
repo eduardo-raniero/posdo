@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { useRouter } from "next/router";
 
 import styles from './skeleton.module.scss';
 
 export default function Skeleton(){
     const router = useRouter();
-    const [user, setUser] = useState({});
 
     useEffect(() => {
         let obj = localStorage.getItem('user');
