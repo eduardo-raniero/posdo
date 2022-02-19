@@ -24,11 +24,11 @@ function Book(){
             }))
             
             if (udata.uid){
-                router.push('/carregando')
+                router.push('/carregando');
             }
         })
         .catch(()=>{
-            router.push('/agendar')
+            router.push('/agendar');
         })
     }
 
