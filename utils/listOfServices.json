@@ -5,7 +5,7 @@
         "desc": "Lorem ipsum dolor sit ame some big text here so i can go to the next step",
         "time": "60 min",
         "price": "R$50",
-        "img": "./services/haircut.jpg"
+        "img": "./services/haircut-two.jpg"
     },
     {
         "id": "1",
@@ -13,7 +13,7 @@
         "desc": "Lorem ipsum dolor sit ame some big text here so i can go to the next step",
         "time": "30 min",
         "price": "R$40",
-        "img": "./services/beard.jpg"
+        "img": "./services/beard-two.jpg"
     },
     {
         "id": "2",
@@ -21,6 +21,6 @@
         "desc": "Lorem ipsum dolor sit ame some big text here so i can go to the next step",
         "time": "80 min",
         "price": "R$80",
-        "img": "./services/beard-haircut.jpg"
+        "img": "./services/beard-haircut-two.jpg"
     }
 ]

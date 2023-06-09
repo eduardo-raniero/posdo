@@ -9,7 +9,7 @@ export default function Menu(){
                 <div className={styles.menuAligner}>
                     <div style={{marginLeft: '1rem'}}>
                        <a onClick={() => router.push('/')}> 
-                        <img className={styles.Logo} src="./logo/TradicionalCinza.svg" alt="Posdo WebApp" />
+                        <img className={styles.Logo} src="./logo/TradicionalCinza.svg" alt="Posdo WebApp" loading='lazy' />
                        </a>
                     </div>
                     

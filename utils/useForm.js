@@ -37,7 +37,6 @@ const useForm = validate => {
             e.preventDefault()
         } 
         
-        console.log(isDisabled);
         setErrors(validate(values))
     }
 

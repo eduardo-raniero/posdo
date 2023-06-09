@@ -13,7 +13,7 @@ function History(){
                 <div style={{marginLeft: '1rem', marginRight: '1rem'}} className={styles.textAligner}>
                     <div className={styles.textGrid}>
                         <div>
-                        <img style={{width: '2rem', height: '2rem', marginBottom: '1.6rem', display: 'inline'}} src="./logo/anchor.svg" alt="âncora posdo" />
+                        <img style={{width: '2rem', height: '2rem', marginBottom: '1.6rem', display: 'inline'}} src="./logo/anchor.svg" alt="âncora posdo" loading='lazy' />
 
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 
@@ -25,7 +25,7 @@ function History(){
                         </p>
                         </div>
                         
-                        <img style={{marginRight: '1rem'}} src="./services/haircut.jpg" alt="" />
+                        <img style={{marginRight: '1rem'}} src="./services/haircut-two.jpg" alt="" loading='lazy' />
                         
                     </div>
                 </div>

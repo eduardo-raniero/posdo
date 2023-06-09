@@ -1,6 +1,6 @@
 .menu{
     padding: 2.5rem 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.34);
 }
 
 .menuAligner {
@@ -61,7 +61,7 @@
 @media only screen and (max-width: 500px){
   .menu{
     padding: 1.5rem 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.34);
 }
   
   .menuAligner  {

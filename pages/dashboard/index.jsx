@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import Image from 'next/image'
 
 import styles from '../../styles/dashboard.module.scss';
 
@@ -7,6 +8,7 @@ export default function Dashboard(){
     const router = useRouter();
     const [user, setUser] = useState({});
     
+    //replace to react query here
     useEffect(() => {
         let obj = localStorage.getItem('user');
         const uObj = JSON.parse(obj);
@@ -54,7 +56,7 @@ export default function Dashboard(){
                 {
                     agenda.map((item) => (
                     <div key={item.id} className={styles.barberItem}>
-                        <img src={`./workers/${item.img}.png`} alt={`${item.img}`} />
+                        <img src={`./workers/${item.img}.png`} alt={`${item.img}`} loading="lazy" />
                         <p> <strong> {item.unoccupied.length} </strong> {item.unoccupied.length === 1 ? "Horário disponível" : 'Horários disponíveis'} </p>
                         <button disabled={item.unoccupied.length === 0 ? true : false}>Escolher Horário</button>
                     </div>
