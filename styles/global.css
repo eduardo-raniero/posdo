@@ -41,3 +41,7 @@ html {
     cursor: pointer;
     transition: 0.25s;
   }
+
+  small {
+    font-family: 'Merriweather';
+  }

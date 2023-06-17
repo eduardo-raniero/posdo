@@ -8,7 +8,7 @@ import { BsClockFill } from 'react-icons/bs';
 import { AiFillDollarCircle } from 'react-icons/ai';
 
 export default function ServicesBox(){
-    const currentService = 0
+    const currentService = 2
 
     return(
         <article className={styles.services}>
@@ -19,7 +19,7 @@ export default function ServicesBox(){
                   width={500} 
                   height={450} 
                   loading='lazy' 
-                  src={"/"+services[currentService]?.img} 
+                  src={services[currentService]?.img} 
                   alt="Serviços Posdo Corte"
                 />
             </div>
