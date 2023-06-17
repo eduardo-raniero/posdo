@@ -3,24 +3,24 @@
         "id": "0",
         "name": "Corte de Cabelo",
         "desc": "Lorem ipsum dolor sit ame some big text here so i can go to the next step",
-        "time": "60 min",
+        "time": "30 min",
         "price": "R$50",
-        "img": "./services/haircut-two.jpg"
+        "img": "/services/haircut-two.jpg"
     },
     {
         "id": "1",
         "name": "Aparar a Barba",
         "desc": "Lorem ipsum dolor sit ame some big text here so i can go to the next step",
-        "time": "30 min",
+        "time": "20 min",
         "price": "R$40",
-        "img": "./services/beard-two.jpg"
+        "img": "/services/beard-two.jpg"
     },
     {
         "id": "2",
-        "name": "Cabelo &amp; Barba",
+        "name": "Cabelo e Barba",
         "desc": "Lorem ipsum dolor sit ame some big text here so i can go to the next step",
-        "time": "80 min",
-        "price": "R$80",
-        "img": "./services/beard-haircut-two.jpg"
+        "time": "50 min",
+        "price": "R$100",
+        "img": "/services/beard-haircut-two.jpg"
     }
 ]

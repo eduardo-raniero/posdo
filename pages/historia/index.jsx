@@ -6,8 +6,8 @@ function History(){
     return(
         <article className={styles.bigAligner}>
             <div className={styles.banner}>
-                <h1>Quem é a Posdo?</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <h1>Nosso começo</h1>
+                <p>Lorem Ipsum is simply dummy text</p>
             </div>
             <div className={styles.text}>
                 <div style={{marginLeft: '1rem', marginRight: '1rem'}} className={styles.textAligner}>

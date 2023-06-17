@@ -56,9 +56,25 @@ export default function Dashboard(){
                 {
                     agenda.map((item) => (
                     <div key={item.id} className={styles.barberItem}>
-                        <img src={`./workers/${item.img}.png`} alt={`${item.img}`} loading="lazy" />
-                        <p> <strong> {item.unoccupied.length} </strong> {item.unoccupied.length === 1 ? "Horário disponível" : 'Horários disponíveis'} </p>
-                        <button disabled={item.unoccupied.length === 0 ? true : false}>Escolher Horário</button>
+                        <img 
+                            className="barberPhoto" 
+                            src={`./workers/${item.img}.png`} 
+                            alt={`${item.img}`} 
+                            style={{opacity: `${item.unoccupied.length == 0 ? '.34' : '1'}`}}
+                            loading="lazy" 
+                        />
+                        <br></br>
+                        <small style={{opacity: `${item.unoccupied.length == 0 ? '.34' : '1'}`}}>{item.barber}</small>
+                        <p 
+                            style={{opacity: `${item.unoccupied.length == 0 ? '.34' : '1'}`}}
+                        > 
+                            <strong> {item.unoccupied.length} </strong> {item.unoccupied.length === 1 ? "Horário disponível" : 'Horários disponíveis'} 
+                        </p>
+                        <button 
+                            style={{opacity: `${item.unoccupied.length == 0 ? '.34' : '1'}`}} 
+                            disabled={item.unoccupied.length === 0 ? true : false}>
+                                Escolher Horário
+                        </button>
                     </div>
                     ))
                 }
