@@ -1,7 +1,5 @@
 import Image from 'next/image'
 
-import LazyLoad from 'react-lazyload';
-
 import services from '../../../utils/listOfServices.json';
 
 import styles from '../../../styles/home.module.scss';
@@ -17,7 +15,6 @@ export default function ServicesBox(){
         <div className={styles.servicesAligner}>
           <div style={{marginLeft: '1rem', marginRight: '1rem'}} className={styles.servicesBox}>
             <div className={styles.servicesBigImg}>
-              <LazyLoad height={450} offset={30}>
                 <Image 
                   width={500} 
                   height={450} 
@@ -25,7 +22,6 @@ export default function ServicesBox(){
                   src={"/"+services[currentService]?.img} 
                   alt="Serviços Posdo Corte"
                 />
-              </LazyLoad>
             </div>
             
             <div className={styles.detailsBox}>
