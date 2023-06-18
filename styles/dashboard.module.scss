@@ -18,12 +18,13 @@
 
     button{
         padding: .8rem 1rem;
-        margin-top: .5rem;
+        margin-top: 1rem;
         border-radius: .1rem;
         background-color: #E6A500;
         color: #022640;
         font-weight: bold;
         border: 2px solid #E6A500;
+        font-family: 'Merriweather';
 
         &:hover{
             color: #E6A500;
@@ -39,12 +40,52 @@
         }
     }
 
+    .barbersBox {
+        padding: 0 .75rem;
+        display: grid;
+        gap: 1rem;
+    }
+
     .barberItem{
-        width: 35vw;
+        max-width: 20rem;
         background-color: #011728;
         margin-bottom: 1.6rem;
         padding: 2rem;
         border-radius: .2rem;
         font-size: 1.125rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bigAligner {  
+        
+        h1{
+            font-size: 2.5rem;
+        }
+
+        .barbersBox {
+            padding: 0 .75rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .barberItem{
+            width: 70%;
+            max-width: 25rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1250px){
+    .barbersBox{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1251px) {
+    .barbersBox {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
