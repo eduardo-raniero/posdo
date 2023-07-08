@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router';
 
 import services from '../../../utils/listOfServices.json';
 
@@ -9,6 +10,7 @@ import { AiFillDollarCircle } from 'react-icons/ai';
 
 export default function ServicesBox(){
     const currentService = 2
+    const router = useRouter();
 
     return(
         <article className={styles.services}>
@@ -37,7 +39,7 @@ export default function ServicesBox(){
                   <p>{services[currentService]?.price}</p>
                 </div>
               </div>
-              <button>Agendar</button>
+              <button onClick={() => router.push('/agendar')}>Agendar</button>
             </div>
           </div>
         </div>

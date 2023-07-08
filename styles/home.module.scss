@@ -173,6 +173,13 @@
       padding: .5rem 0 0 0;
     }
   }
+
+  .workerBox:hover{
+    strong, p {
+      filter: brightness(1.25);
+      transition: .2s ease-in-out;
+    }
+  }
 }
 
 .cta {
@@ -227,23 +234,31 @@
       font-size: 1.25rem;
     }
   }
-  
+
   .oldMan .oldManImg {
-    width: 13rem;
-    position: absolute;
-    margin: 1.35rem 0 0 -3.8rem;
-    animation-name: old-man;
-    animation-duration: 1.25s;
+    display: none;
   }
   
   .oldMan .bubbles {
-    position: relative;
-    margin-left: 23rem;
-    margin-bottom: -6.5rem;
-    width: 4rem;
-    animation-name: old-man-bubble;
-    animation-duration: 1.25s;
+    display: none;
   }
+  
+  // .oldMan .oldManImg {
+  //   width: 13rem;
+  //   position: absolute;
+  //   margin: 1.35rem 0 0 -3.8rem;
+  //   animation-name: old-man;
+  //   animation-duration: 1.25s;
+  // }
+  
+  // .oldMan .bubbles {
+  //   position: relative;
+  //   margin-left: 23rem;
+  //   margin-bottom: -6.5rem;
+  //   width: 4rem;
+  //   animation-name: old-man-bubble;
+  //   animation-duration: 1.25s;
+  // }
 
   .workers {
     height: 62rem;
@@ -444,7 +459,7 @@
 
 @media only screen and (max-width: 600px){
   .banner {
-    height: 25rem;
+    height: 22rem;
   }
   
   .oldMan .oldManImg {
