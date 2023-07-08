@@ -10,7 +10,7 @@ export default function Footer(){
             <div className={styles.footer}>
                 <div className={styles.footerAligner}>
                     <div style={{marginLeft: '1rem', maxWidth: '25rem'}}>
-                        <span>Todos os direitos reservados Posdo {`${year}`} 31.178.616/0001-80</span>
+                        <span>Todos os direitos reservados Posdo {`${year}`} 00.000.000/0000-00</span>
                     </div>
                     
                     <div style={{marginRight: '1rem'}}>
