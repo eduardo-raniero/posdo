@@ -7,8 +7,8 @@ export default function MainBanner(){
     return (
         <article className={styles.banner}>
           <div className={styles.bannerText}>
-            <h1>Lorem Ipsum</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <h1>Barba, Cabelo & Tradição</h1>
+            <p>Posdo Barbearia, onde tradição e família são os pilares de nossa operação.</p>
           </div>
           <div style={{marginRight: '1rem'}} className={styles.oldMan}>
               <Image 

@@ -8,7 +8,7 @@ export default function CtaBox(){
     return (
         <article className={styles.cta}>
             <div className={styles.ctaAligner}>
-            <h1>What is Lorem Ipsum?</h1>
+            <h1>Renove-se, agende agora!</h1>
             <button onClick={() => router.push('/agendar')}>Agendar</button>
             </div>
         </article>
