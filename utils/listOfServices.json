@@ -2,25 +2,25 @@
     {
         "id": "0",
         "name": "Corte de Cabelo",
-        "desc": "Lorem ipsum dolor sit ame some big text here so i can go to the next step",
+        "desc": "Cada mecha é cortada para lhe proporcionar um visual impecável. Renove-se",
         "time": "30 min",
-        "price": "R$50",
+        "price": "R$60",
         "img": "/services/haircut-two.jpg"
     },
     {
         "id": "1",
-        "name": "Aparar a Barba",
-        "desc": "Lorem ipsum dolor sit ame some big text here so i can go to the next step",
+        "name": "Barba",
+        "desc": "A barba transcende o comum para se tornar uma marca de distinção. Moldamos não apenas pelos, mas a confiança e charme",
         "time": "20 min",
-        "price": "R$40",
+        "price": "R$50",
         "img": "/services/beard-two.jpg"
     },
     {
         "id": "2",
         "name": "Cabelo e Barba",
-        "desc": "Lorem ipsum dolor sit ame some big text here so i can go to the next step",
+        "desc": "Deixe-nos esculpir seu estilo com precisão, enquanto desfruta de um ambiente acolhedor e dedicado ao homem moderno.",
         "time": "50 min",
-        "price": "R$100",
+        "price": "R$120",
         "img": "/services/beard-haircut-two.jpg"
     }
 ]
